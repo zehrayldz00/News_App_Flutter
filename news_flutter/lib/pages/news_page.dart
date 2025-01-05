@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:news_flutter/models/category.dart';
 import 'package:news_flutter/viewmodel/article_list_view_model.dart';
@@ -85,7 +84,7 @@ class _NewsPageState extends State<NewsPage> {
                 subtitle: 
                   Text(vm.viewModel.articles[index].description??'') ,
               ),
-              ButtonBar(
+              OverflowBar(
                 children: [
                   MaterialButton(
                     onPressed: () async{
